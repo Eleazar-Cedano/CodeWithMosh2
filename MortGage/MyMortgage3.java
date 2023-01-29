@@ -3,7 +3,7 @@ package MortGage;
 import java.text.NumberFormat;
 import java.util.Scanner;
 
-public class MyMortgage2A {
+ class MyMortgage3 {
     static Scanner scanner = new Scanner(System.in);
     final static byte MONTHS_IN_YEAR = 12, PERCENT = 100;
     static double period, monthlyRate, value;
@@ -52,7 +52,7 @@ public class MyMortgage2A {
         } while (true);
         return (byte)value;
     }
-    static void calculateMortgage(int principal, byte term,float interest){
+    static void myMortgage(int principal, byte term,float interest){
 
         period = term * MONTHS_IN_YEAR;
         monthlyRate = interest / PERCENT / MONTHS_IN_YEAR;
@@ -70,6 +70,6 @@ public class MyMortgage2A {
         byte _years = readTerm();
         float _interest = readInterestRate();
 
-        calculateMortgage(_principal,_years,_interest );
+        myMortgage(_principal,_years,_interest );
     }
 }

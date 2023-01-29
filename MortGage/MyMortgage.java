@@ -3,7 +3,7 @@ package MortGage;
 import java.text.NumberFormat;
 import java.util.*;
 
-public class MyMortgage {
+ class MyMortgage {
     static void mortgage(){
         final double MONTHS_IN_YEAR = 12;
         final double PERCENT = 100;
